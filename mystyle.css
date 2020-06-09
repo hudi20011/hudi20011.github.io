@@ -1,9 +1,17 @@
 body {
   background-color: lightblue;
+  color: white;
   font-family: verdana;
 }
 
-h1 {
-  color: tomato;
+
+title {
+  color: white;
+  font-size: 70px;
+}
+
+p
+ {
+  color: white;
   margin-left: 20px;
 }
