@@ -15,3 +15,27 @@ p
   color: white;
   margin-left: 20px;
 }
+
+a:link, a:visited {
+  background-color: tomato;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 15px;
+}
+table#t01 {
+  width: 70%;
+  background-color: grey;
+  opacity: 0.97;
+}
