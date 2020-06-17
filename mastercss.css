@@ -1,0 +1,53 @@
+.titel {
+  justify-content: center;
+  color: black;
+  font-style: normal;
+  font-size: 32px;
+  font-family: verdana;
+  display: flex;
+  font-style: italic;
+}
+
+.magazin {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.artikel {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  height: 450px;
+  width: 400px;
+  padding: 7px;
+}
+
+.artikel-gross {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  height: 450px;
+  width: 800px;
+}
+
+ .artikel-titel {
+   display: flex;
+   justify-content: center;
+   margin: 2px;
+   font-size: 20px;
+   font-style: italic;
+ }
+.untertitel {
+  display: flex;
+  justify-content: center;
+
+}
+
+.artikel-riesig {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  height: 450px;
+  width: 1218px;
+}
