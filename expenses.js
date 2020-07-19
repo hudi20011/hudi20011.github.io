@@ -9,15 +9,22 @@ let grositot = 0;
 let steffitot = 0;
 let tanjatot = 0;
 
+
+
+function all(){
+
 for (var i = 0; i < grosi.length; i++) {
   grositot += grosi[i];
 }
 
 console.log("Grosi Ausgaben in Kuna: " + grositot);
 
+function steffiTotFunction(){
+  steffitot=0;
 for (var i = 0; i < steffi.length; i++) {
   steffitot += steffi[i];
-}
+}console.log(steffitot);}
+steffiTotFunction();
 
 console.log("Steffi Ausgaben in Kuna: " + steffitot);
 
@@ -145,3 +152,16 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+}
+
+all();
+
+let dingdong
+function house() {
+  dingdong = Math.round(Number(document.getElementById('ivo').value)/.14);
+  steffi.push(dingdong);
+  console.log(dingdong);
+  console.log(steffi);
+}
+document.getElementById("btn").addEventListener("click", house);
+document.getElementById("btn").addEventListener("click", all);

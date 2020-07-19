@@ -18,6 +18,11 @@
     height: 20%;
 }
 
+#btn {
+    width: 10%;
+    height: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
     .ausgaben{
         display: block;
@@ -28,6 +33,10 @@
     #graph{
         width: 100%;
 
+    }
+
+    #btn {
+        width: 50%;
     }
   }
 
