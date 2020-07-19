@@ -12,10 +12,12 @@ let tanjatot = 0;
 
 
 function all(){
-
+function gtF(){
+  grositot=0;
 for (var i = 0; i < grosi.length; i++) {
   grositot += grosi[i];
-}
+}console.log(grositot);}
+gtF();
 
 console.log("Grosi Ausgaben in Kuna: " + grositot);
 
@@ -28,9 +30,12 @@ steffiTotFunction();
 
 console.log("Steffi Ausgaben in Kuna: " + steffitot);
 
+function ttF(){
+  tanjatot=0;
 for (var i = 0; i < tanja.length; i++) {
   tanjatot += tanja[i];
-}
+}console.log(tanjatot);}
+ttF();
 
 console.log("Tanja Ausgaben in Kuna: " + tanjatot);
 
@@ -159,9 +164,10 @@ all();
 let dingdong
 function house() {
   dingdong = Math.round(Number(document.getElementById('ivo').value)/.14);
+  if(dingdong !== 0){
   steffi.push(dingdong);
   console.log(dingdong);
-  console.log(steffi);
+  console.log(steffi);}
 }
 document.getElementById("btn").addEventListener("click", house);
 document.getElementById("btn").addEventListener("click", all);
