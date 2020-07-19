@@ -42,6 +42,7 @@ console.log("");
 console.log("Durchschnitt in Franken = " + avg);
 
 let get =0;
+let test;
 let givex =0;
 let givey =0;
 let b;
