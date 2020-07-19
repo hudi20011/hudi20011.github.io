@@ -11,10 +11,26 @@
     text-align: center;
 }
 
+#graph {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+}
+
 @media only screen and (max-width: 600px) {
     .ausgaben{
         display: block;
         justify-content: left;
         text-align: left;
     }
+
+    #graph{
+        width: 100%;
+
+    }
   }
+
+#cost {
+    font-weight: bold;
+}
