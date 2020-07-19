@@ -21,6 +21,13 @@
 #btn {
     width: 10%;
     height: 3rem;
+    margin-top: 6px;
+}
+
+#renew {
+    width: 10%;
+    height: 3rem;
+    margin-top: 6px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -37,6 +44,9 @@
 
     #btn {
         width: 50%;
+        text-align: center;
+        margin-left: 20%;
+        margin-top: 2%;
     }
   }
 

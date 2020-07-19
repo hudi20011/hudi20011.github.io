@@ -161,13 +161,29 @@ var myChart = new Chart(ctx, {
 
 all();
 
+function renew() {
+  grosi = tanja = steffi = [];
+}
+
+let x = document.getElementById("party1");
+let y = document.getElementById("party2");
+let z = document.getElementById("party3");
 let dingdong
 function house() {
   dingdong = Math.round(Number(document.getElementById('ivo').value)/.14);
-  if(dingdong !== 0){
+  if(dingdong !== 0 && y.checked===true){
   steffi.push(dingdong);
   console.log(dingdong);
   console.log(steffi);}
+  else if(dingdong !== 0 && x.checked===true){
+    grosi.push(dingdong);
+  } else if (dingdong !==0 && z.checked===true){
+    tanja.push(dingdong);
+  }
 }
 document.getElementById("btn").addEventListener("click", house);
 document.getElementById("btn").addEventListener("click", all);
+
+document.getElementById("renew").addEventListener("click", renew);
+document.getElementById("renew").addEventListener("click", all);
+
