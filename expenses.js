@@ -42,6 +42,7 @@ console.log("");
 console.log("Durchschnitt in Franken = " + avg);
 
 let get =0;
+let test;
 let givex =0;
 let givey =0;
 let b;
@@ -54,8 +55,16 @@ if (grositot > steffitot && grositot > tanjatot){
   console.log(b);
   givex = avg - steffitot;
   givey = avg - tanjatot;
-  a = givex + " von Steffi, und von Tanja "+ givey;
-  console.log(a);
+  if (givey < 0) {
+    c = avg-steffitot - (-1)*(avg-tanjatot);
+    a = `Grosi von Steffi: ${get} und Tanja von Steffi: ${givex - c}`;
+    console.log(a);
+  }
+  else {
+ a = givex + " von Steffi, und von Grosi "+ givey;
+ console.log(a);}
+
+
 }
 else
 if (steffitot > grositot && steffitot > tanjatot){
