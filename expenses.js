@@ -74,8 +74,9 @@ function all() {
       c = avg - steffitot - -1 * (avg - tanjatot);
       a = `Grosi von Steffi: ${get} und Tanja von Steffi: ${givex - c}`;
       console.log(a);
-    } else {
-      a = givex + " von Steffi, und von Grosi " + givey;
+    } 
+     else {
+      a = givex + " von Steffi, und von Tanja " + givey;
       console.log(a);
     }
   } else if (steffitot > grositot && steffitot > tanjatot) {
@@ -91,8 +92,8 @@ function all() {
     b = "Tanja bekommt " + get + " Franken";
     console.log(b);
     givex = avg - steffitot;
-
     givey = avg - grositot;
+
     if (givey < 0) {
       c = avg - steffitot - -1 * (avg - grositot);
       a = "Tanja von Steffi: " + get + " und Grosi von Steffi: " + (givex - c);
