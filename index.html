@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta lang="de">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="de" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ausgaben Kroatien</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="addy.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="addy.css" />
+  </head>
+  <body>
     <main class="ausgaben">
-        <div class="container"> Ausgaben Grosi
-            <div class="banani" id="juhu"></div>
-        </div>
-        <div class="container"> Ausgaben Steffi
-            <div class="banani" id="steff"></div>
-        </div>
-        <div class="container"> Ausgaben Tanja
-            <div class="banani" id="tan"></div>
-        </div>
-        
-    </main><br><div id="main"></div>
+      <div class="container">
+        Ausgaben Grosi
+        <div class="banani" id="juhu"></div>
+      </div>
+      <div class="container">
+        Ausgaben Steffi
+        <div class="banani" id="steff"></div>
+      </div>
+      <div class="container">
+        Ausgaben Tanja
+        <div class="banani" id="tan"></div>
+      </div>
+    </main>
+    <br />
+    <div id="main"></div>
     <div class="totals">
-        <br>
-            <div id="grosiTot"></div>
-            <div id="steffiTot"></div>
-            <div id="tanjaTot"></div>
+      <br />
+      <div id="grosiTot"></div>
+      <div id="steffiTot"></div>
+      <div id="tanjaTot"></div>
     </div>
     <div class="costs">
-        <br> Methode: geteilt durch 3 <div><br></div>
-        <div id="cost"></div>
-        <div id="costt"></div>
+      <br />
+      Methode: geteilt durch 3
+      <div><br /></div>
+      <div id="cost"></div>
+      <div id="costt"></div>
+    </div>
+
+    Ausgabe in Franken: <br />
+    <input type="number" name="haus" id="ivo" />
+    <input type="radio" name="partei" id="party1" />
+    <label for="party">G</label>
+    <input type="radio" name="partei" id="party2" />
+    <label for="party2">S</label>
+    <input type="radio" name="partei" id="party3" />
+    <label for="party3">T</label><br />
+    <div class="conti">
+      <button id="btn">Neue Ausgabe</button>
+      <button id="renew">Alles löschen</button>
     </div>
     <div id="graph">
-        <canvas id="myChart" width="400" height="400"></canvas>
+      <canvas id="myChart" width="400" height="400"></canvas>
     </div>
-    <input type="number" name="haus" id="ivo" >
-    <input type="radio" name="partei" id="party1" >
-    <label for="party">G</label>
-    <input type="radio" name="partei" id="party2">
-    <label for="party2">S</label>
-    <input type="radio" name="partei" id="party3">
-    <label for="party3">T</label><br>
-    <button id="btn">Ausgabe hinzufügen</button>
-    <br>
-    <!-- <button id="renew">Alles löschen</button> -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="expenses.js"></script>
-</body>
+  </body>
 </html>
