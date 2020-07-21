@@ -76,7 +76,7 @@ function all() {
       console.log(a);
     } 
      else {
-      a = givex + " von Steffi, und von Tanja " + givey;
+      a = `${givex} von Steffi, und von Tanja ${givey}`;
       console.log(a);
     }
   } else if (steffitot > grositot && steffitot > tanjatot) {
